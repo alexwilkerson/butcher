@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{@blog.title}}</title>
+  <meta name="description" content="{{@blog.description}}">
+  <meta name="author" content="{{@blog.author}}">
+
+  <link rel="stylesheet" href="{{asset "css/hack.css"}}">
+  <link rel="stylesheet" href="{{asset "css/styles.css"}}">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  {{ghost_head}}
+</head>
+
+<body class="{{body_class}} hack">
+  <div class="wrapper_butcher">
+  {{{body}}}
+  </div>
+  {{ghost_foot}}
+</body>
+</html>
