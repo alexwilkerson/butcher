@@ -1,3 +1,7 @@
+html {
+  -webkit-font-size-adjust: 100%;
+}
+
 .wrapper_butcher {
   max-width: 600px;
   margin: 0 auto;
