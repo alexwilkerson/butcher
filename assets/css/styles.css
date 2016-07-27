@@ -5,14 +5,6 @@
   padding-right: 10px;
 }
 
-.footer_butcher {
-  margin-top: 15px !important;
-  color: #fff !important;
-  background: #000 !important;
-  padding: 5px !important;
-  text-align: center !important;
-}
-
 .blogtitle_butcher, .posttitle_butcher {
   padding-top: 10px !important;
   padding-bottom: 30px !important;
@@ -54,3 +46,16 @@ a img {
   display: block;
   width: 100% !important;
 }
+
+.footer_butcher {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  color: #fff !important;
+  background: #000 !important;
+  padding: 5px !important;
+  text-align: center !important;
+}
+
+
