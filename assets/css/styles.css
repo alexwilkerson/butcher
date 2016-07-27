@@ -7,7 +7,10 @@
 
 .footer_butcher {
   margin-top: 15px !important;
-  margin-bottom: 5px !important;
+  color: #fff !important;
+  background: #000 !important;
+  padding: 5px !important;
+  text-align: center !important;
 }
 
 .blogtitle_butcher, .posttitle_butcher {
@@ -26,4 +29,23 @@ h2, h3, h4, h5, h6 {
 
 .blogdescription_butcher {
   margin-top: -15px !important;
+}
+
+.logo_butcher {
+  margin-top: 10px;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+a img {
+  text-decoration: none !important;
+  border: 0 none !important;
+}
+
+.pagination_butcher {
+  margin-top: 15px !important;
+  text-transform: lowercase;
+  font-weight: bold;
 }

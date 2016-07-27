@@ -7,23 +7,12 @@
 
   <article class="article_butcher" role="article" itemscope itemtype="http://schema.org/Article">
   <header class="postheader_butcher">
-    <time class="date_butcher" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
-    <h1 class="posttitle_butcher" itemprop="headline">{{title}}</h1>
+  <h1 class="posttitle_butcher" itemprop"headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a> &bull;
+  <time class="date_butcher" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='ddd DD MMM YYYY'}}</time></h1>
   </header>
 
   <div class="postcontent_butcher" itemprop="articleBody">
   {{content}}
-  </div>
-  {{#if tags}}
-  <div class="posttags_butcher">
-  tags: {{tags separator=" | "}}
-  {{/if}}
-
-  <div class="sharepost_butcher">
-    <h4 class="share_butcher">share: &nbsp;</h4>
-    <a class="share_butcher icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_butcher">tw</span></a>
-    <a class="share_butcher icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_butcher">fb</span></a>
-    <a class="share_butcher icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_butcher">g+</span></a>
   </div>
 
   {{#if author}}
@@ -32,7 +21,7 @@
     {{#if author.image}}
       <div class="authorimage_butcher"><img src="{{author.image}}" itemprop="image"></div>
     {{/if}}
-      <h4 class="authorname_butcher"><span itemprop="author">{{author.name}}</span></h4>
+      <span itemprop="author">author: {{author.name}}</span>
     {{#if author.website}}
       <div class="authorwebsite_butcher"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
     {{/if}}
@@ -42,7 +31,20 @@
   </div>
   </footer>
   {{/if}}
-  
+ 
+
+  {{#if tags}}
+  <div class="posttags_butcher">
+  tags: {{tags separator=" | "}}
+  {{/if}}
+
+  <div class="sharepost_butcher">
+    share:
+    <a class="share_butcher icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_butcher">tw</span></a>
+    <a class="share_butcher icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_butcher">fb</span></a>
+    <a class="share_butcher icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_butcher">g+</span></a>
+  </div>
+
   </article>
 {{/post}}
 
