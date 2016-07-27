@@ -52,4 +52,5 @@ a img {
 
 .postimage_butcher {
   display: block;
+  width: 100% !important;
 }
