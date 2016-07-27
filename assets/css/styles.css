@@ -49,3 +49,7 @@ a img {
   text-transform: lowercase;
   font-weight: bold;
 }
+
+.postimage_butcher {
+  display: block;
+}

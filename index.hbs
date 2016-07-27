@@ -5,6 +5,7 @@
 {{#foreach posts}}
   <article class="article_butcher" role="article" itemscope itemtype="http://schema.org/Article">
   <header class="postheader_butcher">
+  <img class="postimage_butcher" src="{{image}}" alt="{{title}}">
   <h1 class="posttitle_butcher" itemprop"headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a> &bull;
   <time class="date_butcher" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='ddd DD MMM YYYY'}}</time></h1>
   </header>
