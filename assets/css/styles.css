@@ -58,4 +58,6 @@ a img {
   text-align: center !important;
 }
 
-
+body {
+  margin-bottom: 40px;
+}
